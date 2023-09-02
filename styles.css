@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #faf3eb;
+}
+
+.header {
+  height: 94px;
+}
+
+.nav {
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 40px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav .nav-menu {
+  display: none;
+}
+
+.nav .section-one {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-shrink: 2;
+}
+
+.nav .section-one .logo {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.nav .section-one .nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav .section-one .nav-links .nav-link {
+  list-style: none;
+}
+
+.nav .section-two {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 1;
+}
+
+.nav .section-two a {
+  text-decoration: none;
+  background-color: #cf2e23;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .nav {
+    font-size: 1rem;
+  }
+  .nav .section-one {
+    gap: 40px;
+  }
+
+  .nav .section-one .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav .section-one .nav-links {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav .nav-menu {
+    display: inline-block;
+    font-size: 2rem;
+    color: #cf2e23;
+  }
+
+  .nav .section-one .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav .section-one .nav-links {
+    display: none;
+  }
+
+  .nav .section-two {
+    display: none;
+  }
+}
