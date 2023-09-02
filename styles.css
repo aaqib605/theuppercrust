@@ -66,6 +66,58 @@ body {
   padding: 10px 20px;
 }
 
+/* 
+*******************************
+*********HERO SECTION*********
+*******************************
+*/
+
+.hero {
+  display: flex;
+  padding: 10px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-self: center;
+  margin-right: 8%;
+  padding: 20px;
+  flex-shrink: 1;
+}
+
+.hero .hero-text a {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #cf2e23;
+  color: #cf2e23;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.hero .hero-text a:first-child {
+  margin-right: 10px;
+}
+
+.hero .hero-img {
+  flex-shrink: 2;
+}
+
+.hero .hero-img img {
+  max-width: 100%;
+}
+
+/* 
+*******************************
+*********MEDIA QUERIES*********
+*******************************
+*/
+
 @media screen and (max-width: 1100px) {
   .nav {
     font-size: 1rem;
@@ -100,5 +152,24 @@ body {
 
   .nav .section-two {
     display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 40px;
+  }
+
+  .hero .hero-text {
+    margin-right: 0;
+  }
+
+  .hero .hero-text p {
+    max-width: 95%;
+    line-height: 1.7;
   }
 }
