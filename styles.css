@@ -262,6 +262,17 @@ body {
 
 /* 
 *******************************
+*********SECTION PATTERN*********
+*******************************
+*/
+
+.pattern {
+  background: url("https://theuppercrustpizzeria.com/wp-content/themes/upper_crust/images/pattern.jpg");
+  height: 80px;
+}
+
+/* 
+*******************************
 *********MEDIA QUERIES*********
 *******************************
 */
