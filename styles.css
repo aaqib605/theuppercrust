@@ -221,6 +221,47 @@ body {
 
 /* 
 *******************************
+*******SECTION FOOTER*********
+*******************************
+*/
+
+.footer {
+  padding: 60px 100px;
+  background-color: #cf2e23;
+  color: #fff;
+}
+
+.footer .one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .one img {
+  width: 150px;
+}
+
+.footer .one .footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer .one .footer-links .services,
+.footer .one .footer-links .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .two {
+  margin-top: 50px;
+}
+
+.footer .two p:first-child {
+  margin-bottom: 20px;
+}
+
+/* 
+*******************************
 *********MEDIA QUERIES*********
 *******************************
 */
@@ -238,27 +279,6 @@ body {
   }
 
   .nav .section-one .nav-links {
-    gap: 30px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .section-stripes {
-    gap: 40px;
-  }
-
-  .section-stripes > section {
-    padding: 0 20px;
-  }
-
-  .section-stripes .two .text {
-    margin-left: 15%;
-  }
-
-  .section-stripes .one,
-  .section-stripes .two,
-  .section-stripes .three {
-    flex-direction: column;
     gap: 30px;
   }
 }
@@ -283,6 +303,32 @@ body {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .section-stripes {
+    gap: 40px;
+  }
+
+  .section-stripes > section {
+    padding: 0 20px;
+  }
+
+  .section-stripes .two .text {
+    margin-left: 15%;
+  }
+
+  .section-stripes .one,
+  .section-stripes .two,
+  .section-stripes .three {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer .one {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .hero {
     flex-direction: column;
@@ -300,10 +346,18 @@ body {
     max-width: 95%;
     line-height: 1.7;
   }
+
+  .footer {
+    padding: 60px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .nav {
     padding: 0 20px;
+  }
+
+  .footer {
+    padding: 60px 30px;
   }
 }
